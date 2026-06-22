@@ -14,7 +14,7 @@ Tu ne donnes jamais de conseil médical ou fiscal personnel."""
 
 def ask_groq(prompt, system=SYSTEM_BASE):
     response = client.chat.completions.create(
-        model="llama3-70b-8192",
+        model="llama-3.3-70b-versatile",
         messages=[
             {"role": "system", "content": system},
             {"role": "user", "content": prompt}
